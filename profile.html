@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
-      rel="stylesheet" 
+      rel="stylesheet"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,18 +19,51 @@
         <img id="profilePhoto" src="./assets/profilePhoto.png" />
         <p id="profileName">Gustavo Henrique Assuncao Paiva</p>
       </div>
-      <div id ="personalInfo">
+      <div id="personalInfo">
         <h2>Sobre mim</h2>
-        <p>Tenho 18 anos, acabei de ingressar no curso de Engenharia da Computação. Sou uma pessoa muito tranquila e raramente perco minha paciência.</p>
+        <p>
+          Tenho 18 anos, acabei de ingressar no curso de Engenharia da
+          Computação. Sou uma pessoa muito tranquila e raramente perco minha
+          paciência.
+        </p>
         <h2>Habilidades</h2>
         <ul>
-          <li>Fluência em inglês, tendo completado o "Curso de Inglês para Adultos" oferecido pela wizard</li>
-          <li>Certa experiência com programação, já fiz alguns cursos na área que me próvem uma boa lógica</li>
-          
+          <li>
+            Fluência em inglês, tendo completado o "Curso de Inglês para
+            Adultos" oferecido pela wizard
+          </li>
+          <li>
+            Certa experiência com programação, já fiz alguns cursos na área que
+            me próvem uma boa lógica
+          </li>
         </ul>
       </div>
-      <div id="footer">
-
+      <div id="menuB">
+        <ul class="ulNoDot">
+          <li><a href="./posts.html">Ver Postagens</a></li>
+          <li><a href="./INDEX.HTML">Voltar para o menu</a></li>
+          <li></li>
+        </ul>
+      </div>
+      <div id="social_links">
+        <a
+          href="https://github.com/GustavoHenriqueAssuncaoPaiva"
+          target="_blank"
+        >
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a
+          href="https://instagram.com/gustavohap2?igshid=NzZlODBkYWE4Ng=="
+          target="_blank"
+        >
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/gustavo-henrique-assunção-paiva-aa6830274/"
+          target="_blank"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
       </div>
     </div>
     <script
@@ -41,6 +74,15 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script> 
+    const temaSalvo = localStorage.getItem("theme");
+      if (temaSalvo === "light") {
+        const html = document.documentElement;
+        const img = document.querySelector("bg-desktop-light.jpg");
+        html.classList.add("light");
+        img.setAttribute("src", "./assets/bg-desktop-light.jpg");
+      }
+      </script>
     <script src="./script.js"></script>
   </body>
 </html>

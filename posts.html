@@ -13,10 +13,33 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container"> </div>
-
-
-
+    <div class="container">
+      <ul class="ulNoDot">
+        <li><a href="./profile.html">Quem sou eu</a></li>
+        <li><a href="./INDEX.HTML">Voltar para o menu</a></li>
+        <li></li>
+      </ul>
+      <div id="social_links">
+        <a
+          href="https://github.com/GustavoHenriqueAssuncaoPaiva"
+          target="_blank"
+        >
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a
+          href="https://instagram.com/gustavohap2?igshid=NzZlODBkYWE4Ng=="
+          target="_blank"
+        >
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/gustavo-henrique-assunção-paiva-aa6830274/"
+          target="_blank"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+    </div>
 
     <script
       type="module"
@@ -26,6 +49,16 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script> 
+    const temaSalvo = localStorage.getItem("theme");
+      if (temaSalvo === "light") {
+        const html = document.documentElement;
+        const img = document.querySelector("bg-desktop-light.jpg");
+        html.classList.add("light");
+        img.setAttribute("src", "./assets/bg-desktop-light.jpg");
+      }
+      </script>
     <script src="./script.js"></script>
+
   </body>
 </html>

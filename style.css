@@ -24,11 +24,7 @@
   --switch-bg-url: url(./assets/sun.svg);
   
 }
-#teste {
-  background:var(--bg-url) no-repeat top center/cover;
-  height:100vh;
-  
-}
+
 body {
   background: var(--bg-url) no-repeat top center/cover;
   height: 100vh;
@@ -104,11 +100,14 @@ body * {
 }
 /*links*/
 ul {
-  list-style: none;
+  
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 24px 0px;
+}
+.ulNoDot{
+  list-style: none;
 }
 ul li a {
   display: flex;

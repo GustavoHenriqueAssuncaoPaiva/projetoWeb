@@ -12,19 +12,17 @@
     <title>Menu</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body onload="prof()">
     <div class="container">
       <div class="profile">
-        <img
-          src="./assets/Avatar.png"
-        />
+        <img src="" />
         <p>Blog do Gustavo</p>
       </div>
       <div id="switch" onclick="toggleMode()">
         <button></button>
         <span></span>
       </div>
-      <ul>
+      <ul class="ulNoDot">
         <li>
           <a href="./posts.html">Postagens</a>
         </li>
@@ -59,6 +57,15 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+      const temaSalvo = localStorage.getItem("theme")
+      if (temaSalvo === "light") {
+        const html = document.documentElement
+        const img = document.querySelector("bg-desktop-light.jpg")
+        html.classList.add("light")
+        img.setAttribute("src", "./assets/bg-desktop-light.jpg")
+      }
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>
