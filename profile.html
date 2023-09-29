@@ -10,21 +10,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="class" href="./INDEX.HTML" />
-    <title>Postagens</title>
+    <title>Perfil</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
       <div class="profile">
         <img id="profilePhoto" src="./assets/profilePhoto.png" />
-        <p id="profileName">Gustavo Henrique Assuncao Paiva</p>
+        <p id="profileName">gustavo.h.dassuncao@gmail.com</p>
       </div>
       <div id="personalInfo">
         <h2>Sobre mim</h2>
         <p>
-          Tenho 18 anos, acabei de ingressar no curso de Engenharia da
-          Computação. Sou uma pessoa muito tranquila e raramente perco minha
-          paciência.
+          Meu nome é Gustavo Henrique Assunção Paiva e tenho 18 anos, acabei de ingressar no curso de Engenharia da
+          Computação e sou uma pessoa 
         </p>
         <h2>Habilidades</h2>
         <ul>
@@ -36,6 +35,15 @@
             Certa experiência com programação, já fiz alguns cursos na área que
             me próvem uma boa lógica
           </li>
+        </ul>
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Atividade física, vou à academia e gosto de praticar esportes com amigos</li>
+          <li>
+            Jogos, amo jogos, principalmente os que são competitivos
+          </li>
+          <li>Leitura, desde pequeno eu sou leitor, gosto desde quadrinhos a livros informacionais</li>
+          <li>Música, algo indispensável, serve tanto para desestressar quanto para focar</li>
         </ul>
       </div>
       <div id="menuB">
@@ -74,15 +82,15 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script> 
-    const temaSalvo = localStorage.getItem("theme");
+    <script>
+      const temaSalvo = localStorage.getItem("theme")
       if (temaSalvo === "light") {
-        const html = document.documentElement;
-        const img = document.querySelector("bg-desktop-light.jpg");
-        html.classList.add("light");
-        img.setAttribute("src", "./assets/bg-desktop-light.jpg");
+        const html = document.documentElement
+        const img = document.querySelector("bg-desktop-light.jpg")
+        html.classList.add("light")
+        img.setAttribute("src", "./assets/bg-desktop-light.jpg")
       }
-      </script>
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>

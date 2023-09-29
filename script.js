@@ -12,7 +12,7 @@ function toggleMode() {
     localStorage.setItem("theme", "dark")
   }
 }
-function prof() {
+function profPic() {
   const html = document.documentElement
   const img = document.querySelector(".profile img")
   if (html.classList.contains("light")) {
