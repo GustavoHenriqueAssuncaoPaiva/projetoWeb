@@ -140,7 +140,14 @@ body * {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
 }
-
+/*posts*/
+#posts .ulpost{
+  display: flex;
+  border: solid 1px;
+  width: 320px;
+  margin: auto;
+  padding: 8px 10px;
+}
 /*links*/
 ul {
   display: flex;
