@@ -14,13 +14,27 @@
   </head>
   <body>
     <div class="container">
-      <div id ="posts">
+      <div id="posts">
         <div class="post">
           <div class="postImg">
-            <img src="./assets/profilePhoto.png"/>
+            <img src="./assets/profilePhoto.png" />
           </div>
-          
-          
+
+          <div class="postText">
+            <p class="postName">Gustavo Henrique</p>
+            <h4></h4>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="posts">
+        <div class="post">
+          <div class="postImg">
+            <img src="./assets/profilePhoto.png" />
+          </div>
+
           <div class="postText">
             <p class="postName">Gustavo Henrique</p>
             <p>Abacaxi</p>
@@ -62,16 +76,15 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script> 
-    const temaSalvo = localStorage.getItem("theme");
+    <script>
+      const temaSalvo = localStorage.getItem("theme")
       if (temaSalvo === "light") {
-        const html = document.documentElement;
-        const img = document.querySelector("bg-desktop-light.jpg");
-        html.classList.add("light");
-        img.setAttribute("src", "./assets/bg-desktop-light.jpg");
+        const html = document.documentElement
+        const img = document.querySelector("bg-desktop-light.jpg")
+        html.classList.add("light")
+        img.setAttribute("src", "./assets/bg-desktop-light.jpg")
       }
-      </script>
+    </script>
     <script src="./script.js"></script>
-
   </body>
 </html>
