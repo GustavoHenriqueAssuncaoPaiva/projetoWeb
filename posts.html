@@ -12,7 +12,7 @@
     <title>Postagens</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body class="scroll">
     <div class="container">
       <div id="posts">
         <div class="post">
@@ -23,7 +23,7 @@
           <div class="postText">
             <p class="postName">Gustavo Henrique</p>
             <h4 class="postTitle">Trabalho em equipe</h4>
-            <p>Gosto de dar meu melhor para ajudar a finalização do projeto, e tambem absorver habilidades dos meus companheiros que somam para se alcançar os melhores resultados</p>
+            <p>Gosto de dar meu melhor para ajudar a finalização do projeto, e também absorver habilidades dos meus companheiros que somam para se alcançar os melhores resultados</p>
           </div>
         </div>
       </div>
@@ -67,7 +67,7 @@
             <h4 class="postTitle">Organização</h4>
             <p>
               Gosto de planejar todas minhas atividades e organizá-las
-              em um cronograma, pois facilita meu manejo e melhora minha produtividade
+              em um cronograma, pois facilita o manejo e melhora minha produtividade
             </p>
           </div>
         </div>
@@ -84,6 +84,10 @@
             <p>Eu priorizo meus objetivos, e foco na melhor execução dos mesmo</p>
           </div>
         </div>
+      </div>
+      <div id="switch" onclick="toggleMode2()">
+        <button></button>
+        <span></span>
       </div>
       <ul class="ulNoDot">
         <li><a href="./profile.html">Quem sou eu</a></li>
@@ -124,9 +128,9 @@
       const temaSalvo = localStorage.getItem("theme")
       if (temaSalvo === "light") {
         const html = document.documentElement
-        const img = document.querySelector("bg-desktop-light.jpg")
+      
         html.classList.add("light")
-        img.setAttribute("src", "./assets/bg-desktop-light.jpg")
+        
       }
     </script>
     <script src="./script.js"></script>

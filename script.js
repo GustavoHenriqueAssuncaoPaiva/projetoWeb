@@ -21,6 +21,17 @@ function profPic() {
     img.setAttribute("src", "./assets/Avatar.png")
   }
 }
+function toggleMode3() {
+  const html = document.documentElement
+
+  html.classList.toggle("light")
+
+  if (html.classList.contains("light")) {
+    localStorage.setItem("theme", "light")
+  } else {
+    localStorage.setItem("theme", "dark")
+  }
+}
 function toggleMode2() {
   const html = document.documentElement
 
