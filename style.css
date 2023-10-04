@@ -148,7 +148,6 @@ body * {
   padding: 8px 10px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
-
 }
 .light #posts .post {
   display: flex;
@@ -164,20 +163,22 @@ body * {
   text-align: center;
 }
 .postImg {
-  position:relative;
+  position: relative;
   left: 0%;
   margin: 5px;
 }
-.postName{
-  
+.postName {
   font-size: 15px;
   font-weight: bold;
 }
-.postText{
+.postText {
   display: flex;
   flex-direction: column;
   text-align: left;
   padding: 5px;
+}
+.postTitle {
+  font-weight: 500;
 }
 /*links*/
 ul {
